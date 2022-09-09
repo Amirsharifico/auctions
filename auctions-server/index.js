@@ -7,7 +7,7 @@ const db = require("./models");
 
 //Routres
 const auctionRouter = require("./routes/Auctions")
-app.use("/posts", auctionRouter );
+app.use("/auctions", auctionRouter );
 
 db.sequelize.sync().then(() => {
   app.listen(3002, () => {
